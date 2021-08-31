@@ -1,0 +1,26 @@
+.container{
+    padding: 0 15px;
+    max-width: 1180px;
+    margin: 0 auto;
+    /* max-width: 1180px; */
+}
+
+.link-white {
+    display: inline-block;
+    color: #fff;
+    font-style: 12px;
+    font-weight: 500;
+    transition:  0.2s;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    
+}
+
+.link-white:hover{
+    color: #a3cc40;
+    border-color: #a3cc40;
+}
+
+.link-white_big{
+    text-transform: uppercase;
+}

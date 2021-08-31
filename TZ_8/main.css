@@ -1,0 +1,251 @@
+/* Fonts */
+@font-face {
+    font-family: 'IBM-Plex-Sans';
+    src: url('/fonts/IBMPlexSans-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans';
+    src: url('/fonts/IBMPlexSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans';
+    src: url('/fonts/IBMPlexSans-Bold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans';
+    src: url('/fonts/IBMPlexSans-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans';
+    src: url('/fonts/IBMPlexSans-SemiBold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans';
+    src: url('/fonts/IBMPlexSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+/* fonts end */
+
+/* Global properties */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   font-family: 'IBM-Plex-Sans';
+}
+/* Global end*/
+
+/*Header*/
+
+.hero{
+    background-image: url(img/Backgroound_Picture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 81%, 0% 100%);
+}
+
+.header{
+    width: 100%;
+    height: 700px;
+}
+
+.navigation{
+    display: flex;
+}
+
+.menu{
+    margin: 47px 0 0 7px;
+}
+
+.blok__coll{
+    padding:51px 38px 0 74px;
+}
+
+.blok__call{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu__list{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.blok__tel,
+.blok__title,
+.blok__address,
+.blok__call{
+    margin-right: 50px;
+}
+
+.blok__call{
+    background: #fff;
+    padding: 2px 7px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.blok__call span{
+    color: #333;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 7px;
+    line-height: 16px;
+}
+
+.blok__call svg{
+    fill: #333;
+    display: inline-block;
+}
+
+
+.block01__lng-wrap{
+    position: relative;
+    display: inline-block;
+}
+
+.block01__lng{
+    color: #fff;
+    font-size: 12px;
+}
+
+.block01__lng svg{
+    fill: #fff;
+    transition: 0.2s;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.blok__call:hover{
+    border-color: #fff;
+    background: #A3CC40;
+}
+
+.blok__call:hover svg{
+    fill: #fff;
+}
+
+.blok__call__disabled{
+    cursor: not-allowed;
+}
+
+.blok__call:hover span{
+    color: #fff;
+}
+
+.block01__dropdown{
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    background: #666;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(100%);
+}
+
+.block01__dropdown a{
+    display: table;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.block01__lng-wrap:hover .block01__dropdown{
+   visibility: visible;
+   opacity: 1;
+}
+
+.block01__lng-wrap:hover .block01__lng svg{
+    transform: rotate(180deg);
+}
+
+.blok__ul li{
+    display: inline-block;
+    margin-right: 40px;
+    padding-top: 14px;
+}
+
+.blok__main{
+    text-align: center;
+    margin-top: 127px;
+    margin-left: -85px;
+}
+
+.blok__h1{
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 88px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.blok__h2{
+    color: white;
+    font-size: 41px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.blok__nav{
+    font-size: 12px;
+}
+
+.blok__tel{
+    left: 1px;
+}
+
+.welcome {
+    position: relative;
+    border: 1px solid white;
+    width: 332px;
+    background: white;
+    text-align: center;
+    color: rgb(8, 8, 8);
+    border-radius: 10px;
+    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+    font-size: 11px;
+    padding: 0px 12px;
+    margin-left: 910px;
+    top: -175px;
+    z-index: 1;
+    width: 400px;
+    height: 221px;
+    vertical-align: text-top;
+}
+
+.welcome p{
+    text-align: left;
+    margin: 0px 41px 30px 34px;
+}
+
+.welcome__title{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 30px;
+    margin-top: 4px;
+    margin-left: -18px;
+}
