@@ -16,8 +16,8 @@
 
 <body>
     <div class="blok">
-        <header class=" header-container header">
-            <div class="container">
+        <header class="header">
+            <div class="  header-container container">
                 <div class="navigation">
                     <a class="blok__coll">
                         <svg width="156" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +134,7 @@
 
     </div>
 
-    <div class="welcome">
+    <!-- <div class="welcome">
         <h3 class="welcome__title">Добро пожаловать!</h3>
         <p class="welcome__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -145,7 +145,7 @@
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt.
         </p>
-    </div>
+    </div> -->
     <main>
         <div class="container">
             <section id="whyus">
@@ -220,9 +220,7 @@
             </section>
             <section class="film" id="film">
                 <div class="container">
-
                     <h2 class="section__heading">Выберите фильм</h2>
-
                     <table class="table film__table">
                         <thead>
                             <tr class="film__choice">
@@ -298,12 +296,14 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="film__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam.
-                    </div>
+                    <tfoot>
+                        <div class="film__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam.
+                        </div>
+                    </tfoot>
+
                 </div>
-                <br>
-                <br>
+
             </section>
         </div>
 
@@ -549,23 +549,23 @@
                         quam.</div>
                     <div class="card__box">
                         <div class="card">
-                            <img src="image/one.png" alt="" class="card__img">
+                            <img src="image/GOODS1.png" alt="" class="card__img">
                             <div class="card__hover">
-                                <p>Coca-cola</p>
+                                <!-- <p>Coca-cola</p> -->
                             </div>
                         </div>
                         <div class="card_two">
-                            <img src="image/two.png" alt="" class="card__img">
+                            <img src="image/GOODS2.png" alt="" class="card__img">
                             <div class="card__hover">
-                                <p>Брелок
-                                    “Железный человек”</p>
+                                <!-- <p>Брелок
+                                    “Железный человек”</p> -->
                             </div>
                         </div>
                         <div class="card_three">
-                            <img src="image/40073568b 1 (2).png" alt="" class="card__img">
+                            <img src="image/Product 3.png" alt="" class="card__img">
                             <div class="card__hover">
-                                <p>Постер
-                                    “Мстители”</p>
+                                <!-- <p>Постер
+                                    “Мстители”</p> -->
                             </div>
                         </div>
                     </div>
@@ -634,34 +634,44 @@
                         <h4 class="tx-form">Обратная связь</h4>
                         <input class="full_name" type="text" placeholder="Полное имя" required>
                         <!-- <input type="file" required> -->
-                        <select class="option_form">
-                            <option value="Номер места">Номер места </option>
-                            <option value="Номер места">9-18 LUX </option>
-                            <option value="Номер места">18-27 LUX </option>
-                            <option value="Номер места">27-36 CLASSIC </option>
-                            <option value="Номер места">36-45 CLASSIC</option>
-                            <option value="Номер места">45-54 CLASSIC </option>
-                            <option value="Номер места">l64-73 CLASSIC</option>
-                            <option value="Номер места">1-18 BALKO </option>
-                            <option value="Номер места">reserver </option>
-                            <option value="Номер места">reserver </option>
-                        </select>
+                        <div class="feedback__select-wraper">
+                            <select class="option_form">
+                                <option value="Номер места">Номер места </option>
+                                <option value="Номер места">9-18 LUX </option>
+                                <option value="Номер места">18-27 LUX </option>
+                                <option value="Номер места">27-36 CLASSIC </option>
+                                <option value="Номер места">36-45 CLASSIC</option>
+                                <option value="Номер места">45-54 CLASSIC </option>
+                                <option value="Номер места">l64-73 CLASSIC</option>
+                                <option value="Номер места">1-18 BALKO </option>
+                                <option value="Номер места">reserver </option>
+                                <option value="Номер места">reserver </option>
+                            </select>
+                            <svg width="14" height="8" viewbox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L13 1" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
                         <textarea placeholder="Напишите свой отзыв" required class="comment full_name2"></textarea>
-                        <input id="chek__box" type="checkbox" required>
-                        <label class="chek_box" for="chek_box">Я согласен на обработку своих персональных
-                            данных</label>
+
+                        <label class="chek__box">
+                            <input type="checkbox">
+                            <span>Я согласен на обработку своих персональных
+                                данных
+                            </span>
+                        </label>
+
                         <input type="submit" value="послать" class="bt1">
                     </form>
                 </div>
             </div>
         </section>
-        <div class="container">
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35925.36700139233!2d48.6919662955088!3d55.75267497156196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead10e59136d3%3A0x4b2878a0acaeb103!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNC90L3QvtC_0L7Qu9C40YE!5e0!3m2!1sru!2sru!4v1630821173884!5m2!1sru!2sru"
-                    width="973" height="421" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35925.36700139233!2d48.6919662955088!3d55.75267497156196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead10e59136d3%3A0x4b2878a0acaeb103!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNC90L3QvtC_0L7Qu9C40YE!5e0!3m2!1sru!2sru!4v1630821173884!5m2!1sru!2sru"
+                width="100%" height="421" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </div>
     </main>
     <footer class="footer">
@@ -676,8 +686,8 @@
                         incididunt
                         ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam
                     </p>
-                    <div class="about__us">
-                        <a class="ins__link" href="https://www.instagram.com" target="_">
+                    <div class="social">
+                        <a class="social__link" href="https://www.instagram.com" target="_">
                             <svg width="14" height="14" viewbox="0 0 14 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -685,8 +695,8 @@
                                     fill="white" />
                             </svg>
                         </a>
-                        <a class="ins__link" href="https://www.instagram.com" target="_">
-                            <svg width="16" height="15" viewbox="0 0 16 15" fill="none"
+                        <a class="social__link" href="https://www.instagram.com" target="_">
+                            <svg class="social__linkedin" width="16" height="15" viewbox="0 0 16 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M15.4692 9.28928V14.8235H12.2607V9.65978C12.2607 8.36228 11.7965 7.47728 10.6355 7.47728C9.749 7.47728 9.221 8.07428 8.98925 8.65103C8.9045 8.85728 8.88275 9.14453 8.88275 9.43328V14.8235H5.67275C5.67275 14.8235 5.71625 6.07853 5.67275 5.17178H8.88275V6.53978L8.86175 6.57128H8.88275V6.53978C9.30875 5.88353 10.07 4.94528 11.7747 4.94528C13.886 4.94528 15.4692 6.32528 15.4692 9.28928ZM2.31575 0.519531C1.2185 0.519531 0.5 1.23953 0.5 2.18678C0.5 3.11303 1.1975 3.85478 2.27375 3.85478H2.29475C3.4145 3.85478 4.10975 3.11303 4.10975 2.18678C4.09025 1.23953 3.41525 0.519531 2.3165 0.519531H2.31575ZM0.6905 14.8235H3.899V5.17178H0.6905V14.8235Z"
@@ -694,7 +704,7 @@
                             </svg>
 
                         </a>
-                        <a class="ins__link" href="https://www.instagram.com" target="_">
+                        <a class="social__link" href="https://www.instagram.com" target="_">
                             <svg width="16" height="13" viewbox="0 0 16 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -703,7 +713,7 @@
                             </svg>
 
                         </a>
-                        <a class="ins__link" href="https://www.instagram.com" target="_">
+                        <a class="social__link" href="https://www.instagram.com" target="_">
                             <svg width="18" height="13" viewbox="0 0 18 13" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -712,7 +722,7 @@
                             </svg>
 
                         </a>
-                        <a class="ins__link" href="https://www.instagram.com" target="_">
+                        <a class="social__link" href="https://www.instagram.com" target="_">
                             <svg width="8" height="16" viewbox="0 0 8 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
